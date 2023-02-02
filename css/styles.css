@@ -335,10 +335,6 @@ a:focus {
   fill: var(--light-grey-color);
 }
 
-.clients {
-  padding-top: 59px;
-}
-
 .clients-tittle {
   font-size: 36px;
   line-height: 42px;
@@ -370,7 +366,6 @@ a:focus {
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
-  margin-bottom: 57px;
 }
 
 .client-box:hover,
@@ -594,10 +589,74 @@ address {
   border-radius: 2px;
 }
 
+/* footer styles */
+
 .foot-info {
   padding: 0;
   margin: 0;
 }
+
+.foot-form {
+  padding-top: 10px;
+  margin-left: 13px;
+  width: 570px;
+}
+
+.foot-input {
+  height: 50px;
+  width: 358px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.foot-input::placeholder {
+  padding-left: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.foot-subscribe {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--pure-white-color);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.form-justify {
+  justify-content: space-between;
+}
+
+.foot-submit {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background: var(--link-hf-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.foot-submit > span {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #ffffff;
+}
+
+.icon-send {
+  height: 24px;
+  width: 24px;
+}
+
+/* modal window styles */
 
 .backdrop {
   position: fixed;
@@ -636,6 +695,11 @@ address {
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+.modalx-close:hover,
+.modalx-close:focus {
+  fill: var(--link-hf-color);
 }
 
 .is-hidden {
