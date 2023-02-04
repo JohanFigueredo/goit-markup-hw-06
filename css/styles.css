@@ -702,8 +702,52 @@ address {
   fill: var(--link-hf-color);
 }
 
+.modal-content {
+  margin: 40px auto;
+  width: 448px;
+}
+
+.modal-content > h2 {
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 12px;
+  letter-spacing: 0.03em;
+  justify-content: center;
+}
+
+label > p {
+  color: var(--grey-color);
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.form-data {
+  width: 448px;
+  height: 40px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.form-comments {
+  width: 100%;
+  resize: none;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.form-data::placeholder {
+  color: var(--grey-color);
+}
+
+.form-terms {
+  width: 425px;
+  margin: 0 auto;
+  justify-content: center;
+  color: var(--grey-color);
 }
