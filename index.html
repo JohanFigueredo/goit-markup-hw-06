@@ -549,11 +549,25 @@
           <div class="modal-content">
             <h2>Deje sus datos, nos contactaremos con usted</h2>
             <form>
-              <label><p>Nombre</p> <input class="form-data" type="text" name="text"></label>
-              <label><p>Teléfono</p> <input class="form-data" type="number" name="number"></label>
-              <label><p>Email</p> <input class="form-data" type="email" name="email"></label>
-              <label><p>Comentarios</p><textarea class="form-comments" name="feedback" rows="6" placeholder="Introduzca el texto"></textarea></label>
-              <label class="flex form-terms"><input type="checkbox" name="eula" value="accept">  Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</label>
+              <label>
+                <p>Nombre</p><input class="main-contact form-data" type="text" name="text">
+                <svg class="person"><use href="./images/icons.svg#icon-person"></use>
+                </svg></label>
+              <label>
+                <p>Teléfono</p><input class="main-contact form-data" type="number" name="number">
+                <svg class="form-phone"><use href="./images/icons.svg#icon-form-phone"></use></svg></label>
+              <label>
+                <p>Email</p><input class="main-contact form-data" type="email" name="email">
+                <svg class="form-mail"><use href="./images/icons.svg#icon-form-mail"></use></svg></label>
+              <label>
+                <p>Comentarios</p>
+                <textarea class="main-contact form-comments" name="feedback" rows="6" placeholder="Introduzca el texto"></textarea>
+              </label>
+              <label class="flex form-terms">
+                <input class="checkbox" type="checkbox" name="eula" value="accept">
+                Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
+              </label>
+              <label class="submit-form"><button class="submit-form-btn" type="submit"><span class="submit-btn-txt">Enviar</span></button></label>
             </form>
           </div>
         </div>
