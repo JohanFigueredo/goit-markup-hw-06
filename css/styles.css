@@ -752,14 +752,17 @@ label > p {
   color: var(--grey-color);
 }
 
-.not-hv:hover .overlay-text,
-.not-hv:focus .overlay-text {
-  transform: translateY(0);
-}
-
 .main-contact:hover,
 .main-contact:focus {
   outline-color: var(--link-hf-color);
+  border-color: var(--link-hf-color);
+  fill: var(--link-hf-color);
+}
+
+label:hover,
+label:focus {
+  outline-color: var(--link-hf-color);
+  border-color: var(--link-hf-color);
   fill: var(--link-hf-color);
 }
 
@@ -769,7 +772,7 @@ label {
 
 input {
   position: relative;
-  padding: 15px 15px 15px 42px;
+  padding: 0 42px;
 }
 
 .person {
@@ -822,6 +825,5 @@ input {
 }
 
 .submit-form {
-  display: flex;
-  justify-content: center;
+  margin: 0 125px;
 }
